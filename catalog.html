@@ -29,46 +29,82 @@
     <div class="container">
         <section class="filter">
             <form action="/echo" method="post">
-                <div class="filter-title">Стоимость:</div><br>
+                <div class="filter-title">Стоимость:</div>
+                <br>
                 <input type="range" id="price-range" min="0" max="15000" step="1">
                 <br>
-                
+
                 <div class="min-max-price">от
                     <div class="min-price">0</div>
                     до
                     <div class="max-price">15000</div>
                 </div>
-                
+
                 <div class="filter-title">Сетка:</div>
                 <input type="radio" id="adapt" checked>
-                <label for="adapt">Адаптивная:</label><br>
+                <label for="adapt">Адаптивная:</label>
+                <br>
                 <input type="radio" id="fix">
-                <label for="fix">Фиксированная</label><br>
+                <label for="fix">Фиксированная</label>
+                <br>
                 <input type="radio" id="rubber">
-                <label for="rubber">Резиновая</label><br>
-                
-                
+                <label for="rubber">Резиновая</label>
+                <br>
+
+
                 <div class="filter-title">Особенности:</div>
                 <input type="checkbox" id="slider" checked>
-                <label for="slider">Слайдер</label><br>
+                <label for="slider">Слайдер</label>
+                <br>
                 <input type="checkbox" id="block-of-advantages">
-                <label for="block of advantages">Блок преимуществ</label><br>
+                <label for="block of advantages">Блок преимуществ</label>
+                <br>
                 <input type="checkbox" id="news" checked>
-                <label for="news">Новости</label><br>
+                <label for="news">Новости</label>
+                <br>
                 <input type="checkbox" id="galery">
-                <label for="galery">Галерея</label><br>
+                <label for="galery">Галерея</label>
+                <br>
                 <input type="checkbox" id="basket">
-                <label for="basket">Корзина</label><br>
-                
+                <label for="basket">Корзина</label>
+                <br>
+
                 <div class="show-button">
-                <input type="submit" value="Показать">
+                    <input type="submit" value="Показать">
                 </div>
             </form>
 
-
         </section>
+        <section class="sort-panel">
+            <div class="sort-title">Сортировать:</div>
 
-
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По функционалу</a>
+            <div class="sort-btn-down">
+                <a href="#">down</a>
+            </div>
+            <div class="sort-btn-up">
+                <a href="#">up</a>
+            </div>
+        </section>
+        <section class="workshop-gallery">
+            <a href="http://placehold.it/240x270">
+                <img src="http://placehold.it/240x270" width="240" height="270">
+            </a>
+            <a href="http://placehold.it/240x270" width="240" height="270">
+                <img src="http://placehold.it/240x270" width="240" height="270">
+            </a>
+            <a href="http://placehold.it/240x270" width="240" height="270">
+                <img src="http://placehold.it/240x270" width="240" height="270">
+            </a>
+            <a href="http://placehold.it/240x270" width="240" height="270">
+                <img src="http://placehold.it/240x270" width="240" height="270">
+            </a>
+            <a href="http://placehold.it/240x270" width="240" height="270">
+                <img src="http://placehold.it/240x270" width="240" height="270">
+            </a>
+        </section>
 
 
     </div>
@@ -80,6 +116,7 @@
             <br> ул. Б. Конюшенная, д. 19/8
             <br>
             <br> тел +7(812)275-75-75
+            <br>
             <a href="#" class="btn">Напишите нам</a>
         </section>
         <section class="footer-social">
