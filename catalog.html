@@ -8,11 +8,11 @@
 </head>
 
 <body>
-    
+
     <header class="main-header">
-       <div class="header-logo">
-        <a href="/"><img src="#" alt="Nerds"></a>
-    </div>
+        <div class="header-logo">
+            <a href="/"><img src="#" alt="Nerds"></a>
+        </div>
         <nav class="main-navigator">
             <ul>
                 <li>Студия</li>
@@ -26,13 +26,52 @@
         </div>
         <div class="welcome-title">Добро пожаловать в магазин готовых макетов</div>
     </header>
-        <div class="container">
-            
-            
-            
-            
-            
-        </div>
+    <div class="container">
+        <section class="filter">
+            <form action="/echo" method="post">
+                <div class="filter-title">Стоимость:</div><br>
+                <input type="range" id="price-range" min="0" max="15000" step="1">
+                <br>
+                
+                <div class="min-max-price">от
+                    <div class="min-price">0</div>
+                    до
+                    <div class="max-price">15000</div>
+                </div>
+                
+                <div class="filter-title">Сетка:</div>
+                <input type="radio" id="adapt" checked>
+                <label for="adapt">Адаптивная:</label><br>
+                <input type="radio" id="fix">
+                <label for="fix">Фиксированная</label><br>
+                <input type="radio" id="rubber">
+                <label for="rubber">Резиновая</label><br>
+                
+                
+                <div class="filter-title">Особенности:</div>
+                <input type="checkbox" id="slider" checked>
+                <label for="slider">Слайдер</label><br>
+                <input type="checkbox" id="block-of-advantages">
+                <label for="block of advantages">Блок преимуществ</label><br>
+                <input type="checkbox" id="news" checked>
+                <label for="news">Новости</label><br>
+                <input type="checkbox" id="galery">
+                <label for="galery">Галерея</label><br>
+                <input type="checkbox" id="basket">
+                <label for="basket">Корзина</label><br>
+                
+                <div class="show-button">
+                <input type="submit" value="Показать">
+                </div>
+            </form>
+
+
+        </section>
+
+
+
+
+    </div>
 
     <footer class="main-footer">
         <section class="footer-contacts">
