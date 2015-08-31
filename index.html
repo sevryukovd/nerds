@@ -10,46 +10,52 @@
 
 <body>
     <header class="main-header">
-        <div class="header-logo">
-            <a href="#"><img src="img/top-logo.png" alt="Nerds"></a>
-        </div>
-        <nav class="main-navigator">
-            <ul>
-                <li>Студия</li>
-                <li>Клиенты</li>
-                <li>Магазин</li>
-                <li>Контакты</li>
-            </ul>
-        </nav>
-        <div class="cart">
-            <a href="#">Корзина</a>
+        <div class="container clearfix">
+            <div class="header-logo">
+                <a href="#"><img src="img/top-logo.png" alt="Nerds"></a>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li>Студия</li>
+                    <li>Клиенты</li>
+                    <li>Магазин</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#">Корзина</a>
+            </div>
         </div>
     </header>
 
-    <div class="features-slider">
-        <h2>Долго, дорого, скрупулезно</h2>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <div class="learn-more">
-            <a href="#" class="learn-more-btn">Узнать больше</a>
+    <div class="container main-container">
+        <div class="slider-container clearfix">
+            <div class="features">
+                <h2>Долго, дорого, скрупулезно</h2>
+                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <div class="learn-more">
+                    <a href="#" class="learn-more-btn">Узнать больше</a>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="img/slider1-image.png">
+                <a href="#" class="select"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
         </div>
-        <div class="slider">
-            <a href="#" class="select"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-    </div>
 
-    <div class="container">
+
         <!--Я заказчик. Хочу поменять services-before-line и services-after-line местами. Получится бред какой-то. Не привязывай название классов к расположению, содержанию и внешнему виду. Только логические сущности.-->
-        <div class="services-company">
-            <div class="web-sites">
+        <div class="services-company clearfix">
+            <div class="services-company-item">
                 <img src="img/web-sites-image.png" width="240" height="124" alt="">
                 <!--Это title. Ну так и сделай его заголовочным тегом <h>-->
                 <h3 class="services-title">Веб-сайты</h3>
                 <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                 <a href="#" class="btn">Заказать</a>
             </div>
-            <div class="apps">
+            <div class="services-company-item">
                 <img src="img/apps-image.png" width="240" height="124" alt="">
                 <!--Это title. Ну так и сделай его заголовочным тегом <h>-->
                 <h3 class="services-title">Приложения</h3>
@@ -67,7 +73,7 @@
         </div>
         <hr>
         <!--Я заказчик. Хочу поменять services-before-line и services-after-line местами. Получится бред какой-то. Не привязывай название классов к расположению, содержанию и внешнему виду. Только логические сущности.-->
-        <div class="about-company">
+        <div class="about-company clearfix">
             <div class="content-column-left">
                 <h2>Мы маленькая. но гордая дизайн-студия из Краснодара</h2>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
@@ -91,32 +97,39 @@
                     <li>По предоплате 50%</li>
                 </ul>
             </div>
-            <div class="project-logo">
-                <img src="img/glukhanko-logo.png">
-                <img src="img/academy-logo.png">
-                <img src="img/borodinski-logo.png">
-            </div>
+        </div>
+        <div class="project-logo clearfix">
+            <img class="project-logo-image" src="img/glukhanko-logo.png">
+            <img class="project-logo-image" src="img/academy-logo.png">
+            <img class="project-logo-image" src="img/borodinski-logo.png">
         </div>
     </div>
-
-    <footer class="main-footer">
-        <div class="map">
-            <div class="contacts">
-                <div class="contacts-title">Nerds design studio</div>
-                191186, Санкт-Петербург,
-                <br> ул. Б. Конюшенная, д. 19/8
-                <br>
-                <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
-                <br>
-                <a href="#" class="btn">Напишите нам</a>
-            </div>
+    <div class="container clearfix">
+        <div class="contacts">
+            <div class="contacts-title">Nerds design studio</div>
+            191186, Санкт-Петербург,
+            <br> ул. Б. Конюшенная, д. 19/8
+            <br>
+            <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
+            <br>
+            <a href="#" class="btn">Напишите нам</a>
         </div>
-        <div class="footer-social">
-            <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-            <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-            <h2>Давайте дружить, это выгодно!</h2>
-            <span>Скидка 10% для друзей из социальных сетей.</span>
+        <div class="map-logo">
+            <img src="img/map-logo.png">
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <div class="footer-social">
+                <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+                <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+                <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+                </div>
+                <div class="social-discount">
+                    <h2>Давайте дружить, это выгодно!</h2>
+                    <span>Скидка 10% для друзей из социальных сетей.</span>
+                </div>
+            
         </div>
     </footer>
     <!--
