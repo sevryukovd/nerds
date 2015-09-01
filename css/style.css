@@ -66,7 +66,7 @@ h2 {
 
 .main-navigation {
     margin-left: 320px;
-    width: 400px
+    width: 400px;
 }
 
 .cart {
@@ -74,7 +74,7 @@ h2 {
 }
 
 .slider-container {
-    margin: 70px auto;
+    margin: 50px auto;
 }
 
 .features {
@@ -148,4 +148,26 @@ h2 {
 .social-discount {
     float: right;
     width: 550px;
+}
+
+.welcome-title {
+    width: 670px;
+    margin: auto;
+    margin-bottom: 90px;
+    text-align: center;
+}
+.filter {
+    float: left;
+    width: 180px;
+    min-height: 730px;
+    margin-right: 70px
+}
+.sort-panel{
+    float: right;
+    width:600px;
+}
+
+.workshop-gallery{
+    
+    
 }
