@@ -69,6 +69,14 @@ h2 {
     width: 400px;
 }
 
+.main-navigation li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 80px;
+    margin-right: 10px;
+}
+
 .cart {
     float: right;
 }
@@ -156,18 +164,17 @@ h2 {
     margin-bottom: 90px;
     text-align: center;
 }
+
 .filter {
     float: left;
     width: 180px;
     min-height: 730px;
     margin-right: 70px
 }
-.sort-panel{
+
+.sort-panel {
     float: right;
-    width:600px;
+    width: 600px;
 }
 
-.workshop-gallery{
-    
-    
-}
+.workshop-gallery {}
