@@ -61,6 +61,7 @@ h2 {
 .header-logo {
     float: left;
     width: 140px;
+    margin-top: 27px;
 }
 
 .main-navigation {
@@ -70,7 +71,6 @@ h2 {
 
 .cart {
     float: right;
-    width: 110px;
 }
 
 .slider-container {
@@ -88,7 +88,7 @@ h2 {
 }
 
 .services-company {
-    margin: 10px auto;
+    margin: 50px auto;
 }
 
 .services-company-item {
@@ -102,7 +102,7 @@ h2 {
 }
 
 .about-company {
-    margin: 20px auto;
+    margin: 74px auto;
 }
 
 .content-column-left {
@@ -115,13 +115,17 @@ h2 {
     float: right;
 }
 
+.project-logo {
+    margin: 50px auto;
+}
+
 .project-logo-image {
     width: 293px;
     float: left;
 }
 
-.map {
-    margin: 20px auto;
+.map-container {
+    margin: 75px auto;
 }
 
 .contacts {
@@ -138,6 +142,7 @@ h2 {
     float: left;
     width: 240px;
     margin-right: 140px;
+    margin-top: 50px
 }
 
 .social-discount {
