@@ -123,12 +123,12 @@ h2 {
 }
 
 .content-column-left {
-    width: 620px;
+    width: 570px;
     float: left;
 }
 
 .content-column-right {
-    width: 260px;
+    width: 240px;
     float: right;
 }
 
@@ -177,7 +177,7 @@ h2 {
 .welcome-title {
     width: 670px;
     margin: auto;
-    margin-top: 1000px;
+    margin-top: 50px;
     margin-bottom: 170px;
     text-align: center;
 }
@@ -191,5 +191,40 @@ h2 {
 
 
 .workshop-gallery {
-    float: right
+    float: right;
+    width: 560px
+        
+}
+.sort-panel{
+    width: 560px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.sort-panel a{
+    display: inline-block;
+    margin-right: 20px;
+}
+.project-photo{
+    width: 560px;
+}
+.project-photo a{
+    display: inline-block;
+    margin-right: 76px;
+    margin-left: 0px;
+    margin-bottom: 80px;
+}
+.project-photo a:nth-child(2n){
+    margin-right: 0;
+}
+.pagination{
+    width: 284px;
+    margin-right: 10px;
+}
+.pagination a{
+    display: inline-block;
+    margin-right: 35px;
+}
+.pagination .next{
+    margin-left: 0;
 }

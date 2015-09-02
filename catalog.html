@@ -13,124 +13,129 @@
 
     <header class="main-header">
         <div class="container clearfix">
-        <div class="header-logo">
-            <a href="#"><img src="img/top-logo.png" alt="Nerds"></a>
-        </div>
-        <nav class="main-navigation clearfix">
-            <ul>
-                <li>Студия</li>
-                <li>Клиенты</li>
-                <li>Магазин</li>
-                <li>Контакты</li>
-            </ul>
-        </nav>
-        <div class="cart">
-            <a href="#">Корзина</a>
-        </div>
+            <div class="header-logo">
+                <a href="#"><img src="img/top-logo.png" alt="Nerds"></a>
             </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#">Студия</a></li>
+                    <li><a href="#">Клиенты</a</li>
+                    <li><a href="#">Магазин</a</li>
+                    <li><a href="#">Контакты</a</li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#">Корзина</a>
+            </div>
+        </div>
     </header>
-    
-     <div class="container main-container">
-    <div class="welcome-title">Добро пожаловать в магазин готовых макетов</div>
-    <div class="container">
-        <div class="filter">
-            <form action="/echo" method="post">
-                <div class="filter-title">Стоимость:</div>
-                <input type="range" id="price-range" min="0" max="15000" step="1">
-                <div class="min-max-price">от
-                    <div class="min-price">0</div>
-                    до
-                    <div class="max-price">15000</div>
-                </div>
-                <div class="filter-title">Сетка:</div>
-                <input type="radio" id="id1" name="Grid" value="adapt" checked>
-                <label for="id1">Адаптивная:</label>
-                <input type="radio" id="id2" name="Grid" value="fix">
-                <label for="id2">Фиксированная</label>
-                <input type="radio" id="id3" name="Grid" value="rubber">
-                <label for="id3">Резиновая</label>
-                <div class="filter-title">Особенности:</div>
-                <input type="checkbox" id="id4" name="slider" value="yes" checked>
-                <label for="id4">Слайдер</label>
-                <input type="checkbox" id="id5" name="block-of-advantages" value="no">
-                <label for="id5">Блок преимуществ</label>
-                <input type="checkbox" id="id6" name="news" value="yes" checked>
-                <label for="id6">Новости</label>
-                <input type="checkbox" id="id7" name="galery" value="no">
-                <label for="id7">Галерея</label>
-                <input type="checkbox" id="id8" name="basket" value="no">
-                <label for="id8">Корзина</label>
-                <div class="show-button">
-                    <input type="submit" value="Показать">
-                </div>
-            </form>
-        </div>
-        <div class="sort-panel">
-            <span class="sort-title">Сортировать:</span>
 
-            <a href="#">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По функционалу</a>
-            <div class="sort-btn-down">
-                <a href="#">down</a>
+    <div class="container main-container clearfix">
+        <div class="welcome-title">Добро пожаловать в магазин готовых макетов</div>
+        
+            <div class="filter">
+                <form action="/echo" method="post">
+                    <div class="filter-title">Стоимость:</div>
+                    <input type="range" id="price-range" min="0" max="15000" step="1">
+                    <div class="min-max-price">от
+                        <div class="min-price">0</div>
+                        до
+                        <div class="max-price">15000</div>
+                    </div>
+                    <div class="filter-title">Сетка:</div>
+                    <input type="radio" id="id1" name="Grid" value="adapt" checked>
+                    <label for="id1">Адаптивная:</label>
+                    <input type="radio" id="id2" name="Grid" value="fix">
+                    <label for="id2">Фиксированная</label>
+                    <input type="radio" id="id3" name="Grid" value="rubber">
+                    <label for="id3">Резиновая</label>
+                    <div class="filter-title">Особенности:</div>
+                    <input type="checkbox" id="id4" name="slider" value="yes" checked>
+                    <label for="id4">Слайдер</label>
+                    <input type="checkbox" id="id5" name="block-of-advantages" value="no">
+                    <label for="id5">Блок преимуществ</label>
+                    <input type="checkbox" id="id6" name="news" value="yes" checked>
+                    <label for="id6">Новости</label>
+                    <input type="checkbox" id="id7" name="galery" value="no">
+                    <label for="id7">Галерея</label>
+                    <input type="checkbox" id="id8" name="basket" value="no">
+                    <label for="id8">Корзина</label>
+                    <div class="show-button">
+                        <input type="submit" value="Показать">
+                    </div>
+                </form>
             </div>
-            <div class="sort-btn-up">
-                <a href="#">up</a>
+            <div class="workshop-gallery">
+                <div class="sort-panel">
+                    <span class="sort-title">Сортировать:</span>
+                    <a href="#">По цене</a>
+                    <a href="#">По типу</a>
+                    <a href="#">По функционалу</a>
+                    <a class="sort-btn-down" href="#">down</a>
+                    <a class="sort-btn-up" href="#">up</a>
+                </div>
+                <div class="project-photo">
+                    <a href="#">
+                        <img src="img/aviator.jpg" width="240" height="270" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/sunset.jpg" width="240" height="270" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/forte.jpg" width="240" height="270" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/modern-org.jpg" width="240" height="270" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/avenue.jpg" width="240" height="270" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/dovetail.jpg" width="240" height="270" alt="">
+                    </a>
+                </div>
+            
+            <div class="pagination">
+                <a class="enabled" href="#1">1</a>
+                <a href="#2">2</a>
+                <a href="#3">3</a>
+                <a class="next" href="#4">Следующая</a>
             </div>
         </div>
-        <div class="workshop-gallery">
-            <a href="#">
-                <img src="img/aviator.jpg" width="240" height="270" alt="">
-            </a>
-            <a href="#">
-                <img src="img/sunset.jpg" width="240" height="270" alt="">
-            </a>
-            <a href="#">
-                <img src="img/forte.jpg" width="240" height="270" alt="">
-            </a>
-            <a href="#">
-                <img src="img/modern-org.jpg" width="240" height="270" alt="">
-            </a>
-            <a href="#">
-                <img src="img/avenue.jpg" width="240" height="270" alt="">
-            </a>
-            <a href="#">
-                <img src="img/dovetail.jpg" width="240" height="270" alt="">
-            </a>
         </div>
-        <div class="pagination">
-            <a class="enabled" href="#1">1</a>
-            <a href="#2">2</a>
-            <a href="#3">3</a>
-            <a class="next" href="#4">Следующая</a>
-        </div>
-    </div>
-</div>
+        
     
-    <footer class="main-footer">
-        <div class="container clearfix">
-        <div class="map">
+
+    <div class="map-container clearfix">
             <div class="contacts">
                 <div class="contacts-title">Nerds design studio</div>
                 191186, Санкт-Петербург,
                 <br> ул. Б. Конюшенная, д. 19/8
                 <br>
-                <br>
                 <a href="tel:+78122757575">тел. +7(812)275-75-75</a>
                 <br>
                 <a href="#" class="btn">Напишите нам</a>
             </div>
+            <div class="map-logo">
+                <img src="img/map-logo.png">
+            </div>
         </div>
-        <div class="footer-social">
-            <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-            <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-            <h2>Давайте дружить, это выгодно!</h2>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            
+            <footer class="main-footer">
+        <div class="container clearfix">
+            <div class="footer-social">
+                <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+                <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+                <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+            </div>
+            <div class="social-discount">
+                <h2>Давайте дружить, это выгодно!</h2>
+                <span>Скидка 10% для друзей из социальных сетей.</span>
+            </div>
+
         </div>
-            </div
-    </footer>
-    <!--
+                    </footer>
+        <!--
     <p>Разработка сайта: Дмитрий Севрюков</p>
     <p>Наставник: Кира Шатулова</p>
     -->
