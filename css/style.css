@@ -76,13 +76,14 @@ h2 {
 
 .main-navigation li {
     display: inline-block;
-    margin-left: 16px;
+    margin-left: 0;
     font-size: 14px;
 }
+
 .main-navigation li:last-child {
     margin-right: 0;
-    
 }
+
 .cart {
     float: right;
 }
@@ -157,8 +158,7 @@ h2 {
 
 .footer-social {
     float: left;
-    width: 240px;
-    margin-right: 140px;
+    width: 234px;
     margin-top: 50px
 }
 
