@@ -428,3 +428,10 @@ th {
 ul{
         -webkit-padding-start: 0px;
 }
+figure {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
