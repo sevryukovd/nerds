@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid black;
+}
+
 body {
     font-size: 16px;
     line-height: 22px;
@@ -50,7 +54,6 @@ h2 {
 
 .main-header {
     background: #eee;
-    margin-bottom: 63px;
 }
 
 .header-logo {
@@ -138,17 +141,24 @@ h2 {
     font-family: "symbols-nerds";
 }
 
+.main-container {
+    margin: 0px auto;
+}
 .slider-container {
-    margin: 50px auto;
+    min-height: 300px;
+    margin: 0px auto;
+    background: #eee;
 }
 
 .features {
     float: left;
     width: 400px;
+    margin-top: 20px;
 }
 
 .slider {
     float: right;
+    margin-top: 20px;
     width: 470px;
 }
 
