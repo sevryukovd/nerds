@@ -1,24 +1,12 @@
-* {
-    outline: 1px solid black;
-}
+
 
 body {
     font-size: 16px;
     line-height: 22px;
     color: #283136;
-    font-weight: bold;
-    font-family: Roboto;
-}
-
-.main-navigation {
-    line-height: 30px;
-    text-transform: uppercase;
-}
-
-.cart {
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
+    font-weight: 700;
+    min-width: 900;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 .welcome-title {
@@ -51,8 +39,9 @@ h2 {
 }
 
 .container {
-    width: 900px;
+    width: 880px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .clearfix:after {
@@ -61,33 +50,73 @@ h2 {
     clear: both;
 }
 
+.main-header {
+    background: #eee;
+    margin-bottom: 63px;
+}
+
 .header-logo {
     float: left;
-    width: 140px;
-    margin-top: 50px;
+    width: 139px;
+    margin-top: 27px;
 }
 
 .main-navigation {
     float: left;
-    margin-top: 63px;
     margin-left: 183px;
-    width: 400px;
+    margin-top: 53px;
+    width: 399px;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
     font-size: 0;
+    list-style: none;
 }
 
 .main-navigation li {
     display: inline-block;
-    margin-right: 46px;
     font-size: 14px;
+    line-height: 30px;
+    margin-right: 44px;
+    text-transform: uppercase;
+    vertical-align: top;
 }
 
 .main-navigation li:last-child {
     margin-right: 0;
 }
 
+.main-navigation a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-navigation a:hover {
+  color: #f96a6e;
+}
+
+.main-navigation .active a {
+  position: relative;
+}
+
+.main-navigation .active a:after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fb565a;
+}
+
 .cart {
     float: right;
     margin-top: 63px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 .slider-container {
@@ -111,7 +140,7 @@ h2 {
 .services-company-item {
     float: left;
     width: 240px;
-    margin-right: 90px;
+    margin-right: 80px;
 }
 
 .services-company-item:last-child {
@@ -137,7 +166,7 @@ h2 {
 }
 
 .project-logo-image {
-    width: 293px;
+    width: 292px;
     float: left;
 }
 
@@ -189,42 +218,47 @@ h2 {
     margin-right: 70px
 }
 
-
 .workshop-gallery {
     float: right;
     width: 560px
-        
 }
-.sort-panel{
+
+.sort-panel {
     width: 560px;
     margin-top: 5px;
     margin-bottom: 5px;
-    
 }
-.sort-panel a{
+
+.sort-panel a {
     display: inline-block;
     margin-right: 20px;
 }
-.project-photo{
+
+.project-photo {
     width: 560px;
 }
-.project-photo a{
+
+.project-photo a {
     display: inline-block;
     margin-right: 76px;
     margin-left: 0px;
     margin-bottom: 80px;
 }
-.project-photo a:nth-child(2n){
+
+.project-photo a:nth-child(2n) {
     margin-right: 0;
 }
-.pagination{
+
+.pagination {
     width: 284px;
     margin-right: 10px;
 }
-.pagination a{
+
+.pagination a {
     display: inline-block;
     margin-right: 35px;
 }
-.pagination .next{
+
+.pagination .next {
     margin-left: 0;
 }
