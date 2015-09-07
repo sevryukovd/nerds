@@ -1,5 +1,3 @@
-
-
 body {
     font-size: 16px;
     line-height: 22px;
@@ -97,6 +95,10 @@ h2 {
   color: #f96a6e;
 }
 
+.main-navigation a:active {
+    color:#8f8f8f;
+}
+
 .main-navigation .active a {
   position: relative;
 }
@@ -113,10 +115,27 @@ h2 {
 
 .cart {
     float: right;
-    margin-top: 63px;
+    margin-top: 53px;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cart a:hover {
+    color:#f96a6e;
+}
+
+.cart a:active {
+    color:#8f8f8f;
+}
+
+.icon-cart{
+    font-family: "symbols-nerds";
 }
 
 .slider-container {
