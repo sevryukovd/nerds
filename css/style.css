@@ -2,6 +2,7 @@
     outline: 1px solid black;
 }
 
+
 body {
     font-size: 16px;
     line-height: 22px;
@@ -9,12 +10,6 @@ body {
     font-weight: 700;
     min-width: 900;
     font-family: "Roboto", "Arial", sans-serif;
-}
-
-.welcome-title {
-    font-size: 40px;
-    line-height: normal;
-    text-transform: uppercase;
 }
 
 h2 {
@@ -144,31 +139,36 @@ h2 {
 .main-container {
     margin: 0px auto;
 }
-.slider-container {
-    min-height: 300px;
+
+.slider-container,
+.welcome-title{
     margin: 0px auto;
     background: #eee;
 }
 
 .features {
     float: left;
-    width: 400px;
-    margin-top: 20px;
+    width: 380px;
+    padding-top:  68px;
+}
+.features p{
+    padding-top: 16px
 }
 
 .slider {
     float: right;
-    margin-top: 20px;
+    padding-top: 20px;
     width: 470px;
 }
 
 .services-company {
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .services-company-item {
     float: left;
     width: 240px;
+    padding-top: 20px;
     margin-right: 80px;
 }
 
@@ -230,14 +230,6 @@ h2 {
 .social-discount {
     float: right;
     width: 550px;
-}
-
-.welcome-title {
-    width: 670px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 170px;
-    text-align: center;
 }
 
 .filter {

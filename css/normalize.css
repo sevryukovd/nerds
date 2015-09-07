@@ -435,3 +435,21 @@ figure {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
+
+h2 {
+    display: block;
+    font-size: 0em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
