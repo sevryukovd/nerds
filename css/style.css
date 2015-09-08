@@ -144,7 +144,7 @@ h2 {
 }
 
 .features h2 {
-        padding-top: 1px;
+    padding-top: 1px;
 }
 
 .features p {
@@ -187,6 +187,7 @@ h2 {
 
 .services-company {
     margin: 0 auto;
+    margin-bottom: 80px
 }
 
 .services-company img {
@@ -223,15 +224,23 @@ h2 {
 }
 
 .services-item3 {
-letter-spacing: -0.037em;
+    letter-spacing: -0.037em;
+}
+
+hr {
+    border: none;
+    color: #eee;
+    background-color: #eee;
+    height: 2px;
+    margin-bottom: 42px;
 }
 
 .about-company {
-    margin: 74px auto;
+    margin: 0px auto;
 }
 
 .content-column-left {
-    width: 570px;
+    width: 580px;
     float: left;
 }
 
@@ -240,6 +249,28 @@ letter-spacing: -0.037em;
     float: right;
 }
 
+.content-column-left h2 {
+    padding-top: 30px
+}
+
+.content-column-left p {
+    padding-top: 18px;
+    letter-spacing: 0.005em;
+}
+
+.content-column-left h3 {
+    padding-top: 44px;
+    letter-spacing: -0.001em;
+}
+
+.content-column-right img {
+    padding-top: 20px;
+    padding-left: 30px
+}
+
+.content-column-right span{
+    text-transform: uppercase;
+}
 .project-logo {
     margin: 50px auto;
 }
