@@ -123,8 +123,13 @@ h2 {
     position: relative;
     top: -2px;
     left: -11px;
+    color: #bdbdbd;
 }
 
+.icon-basket:hover {
+    color: #f96a6e;
+    
+}
 .main-container {
     margin: 0px auto;
 }
@@ -133,23 +138,18 @@ h2 {
 .welcome-title {
     margin: 0px auto;
     background: #eee;
-    margin-bottom: 83px;
+    margin-bottom: 80px;
     min-height: 346px
 }
 
 .features {
     float: left;
-    width: 380px;
+    width: 370px;
     padding-top: 68px;
 }
 
-.features h2 {
-    padding-top: 1px;
-}
-
 .features p {
-    padding-top: 19px;
-    letter-spacing: -0.004em;
+    padding-top: 18px;
     margin-bottom: 30px;
 }
 
@@ -160,7 +160,6 @@ h2 {
     font-size: 12px;
     line-height: 18px;
     border-radius: 3px;
-    ;
     color: #fff;
     background: #fb565a;
     text-decoration: none;
@@ -171,12 +170,48 @@ h2 {
     padding: 9px 70px;
 }
 
+.btn-learn-more:hover{
+    background: #d6494d;
+}
+
+.btn-learn-more:active{
+    background: #b63538;
+}
+
+.btn-web-sites:hover {
+    background: #d6494d;
+}
+.btn-web-sites:active {
+    background: #b63538;
+}
+
 .btn-applications {
     background: #00ca74;
 }
 
+.btn-applications:hover{
+    background: #01a25e;
+}
+
+.btn-applications:active{
+    background: #009053;
+}
 .btn-presentations {
     background: #efc84a;
+}
+.btn-presentations:hover {
+    background: #d6ae2c;
+}
+.btn-presentations:active {
+    background: #c09b24;
+}
+
+.btn-write:hover {
+    background: #d6494d;
+}
+
+.btn-write:active {
+    background: #b63538;
 }
 
 .slider {
@@ -190,10 +225,6 @@ h2 {
     margin-bottom: 80px
 }
 
-.services-company img {
-    margin-bottom: 17px;
-}
-
 .services-company-item {
     float: left;
     width: 240px;
@@ -205,6 +236,7 @@ h2 {
 }
 
 .services-title {
+    padding-top: 18px;
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
@@ -217,14 +249,6 @@ h2 {
 
 .services-item1 {
     letter-spacing: -0.028em;
-}
-
-.services-item2 {
-    letter-spacing: 0.0001em;
-}
-
-.services-item3 {
-    letter-spacing: -0.037em;
 }
 
 hr {
@@ -254,14 +278,30 @@ hr {
 }
 
 .content-column-left p {
-    padding-top: 18px;
-    letter-spacing: 0.005em;
+    padding-top: 17px;
 }
 
 .content-column-left h3 {
     padding-top: 44px;
-    letter-spacing: -0.001em;
 }
+
+.content-column-left ul{
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.content-column-left li:after{
+    content: "";
+    position: relative;
+    width: 500px;
+    height: 500px;
+    color: #bdbdbd;
+}
+
+
+
+
 
 .content-column-right img {
     padding-top: 20px;
