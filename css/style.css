@@ -1,6 +1,6 @@
-*/* {
+* {
     outline: 1px solid black;
-}*/
+}
 
 body {
     font-size: 16px;
@@ -35,6 +35,7 @@ h2 {
 }
 
 .main-header {
+    margin-bottom: 80px;
     background: #eee;
 }
 
@@ -47,7 +48,7 @@ h2 {
 .main-navigation {
     float: left;
     margin-left: 184px;
-    margin-top: 53px;
+    margin-top: 54px;
     width: 399px;
 }
 
@@ -100,7 +101,7 @@ h2 {
 
 .basket {
     float: right;
-    margin-top: 53px;
+    padding-top: 54px;
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
@@ -138,10 +139,11 @@ h2 {
 .slider {
     position:relative;
     width:100%;
-    height:310px;
-    margin: 0px auto;
+    height:100%;
+    margin: 0 auto;
+    padding-top: 37px;
     background: #eee;
-    margin-bottom: 80px;
+
 }
 
 .slider input[type=radio] {
@@ -155,7 +157,7 @@ h2 {
     left:50%;
     width:200px;
     height:10px;
-    margin-left:-100px;
+    margin-left:-109px;
     text-align:center;
     z-index:1000;
 }
@@ -182,12 +184,12 @@ h2 {
     top:0;
     left:0;
     width:100%;
-    height:100%;
+    height:310px;
     overflow:hidden;
 }
 .slide-text{
-    width:380px;
-    padding:30px 0;
+    width:500px;
+    padding-top: 31px;
     color:#283136;
 }
 .slide-title{
@@ -196,19 +198,11 @@ h2 {
     font-weight:bold;
     color:black;
 }
-.slide .btn{
-    display:block;
-    width:240px;
-    padding:10px 0;
-    margin-top:25px;
-    font-size:12px;
-    color:white;
-    text-transform:uppercase;
-    text-align:center;
-    text-decoration:none;
-    background:#fb565a;
-    border-radius:3px;
+
+.slide-text p{
+    padding-top: 18px;
 }
+
 .slide:nth-child(1){
     background-image:url("../img/slider1-image.png");
     background-repeat:no-repeat;
@@ -217,12 +211,12 @@ h2 {
 .slide:nth-child(2){
     background-image:url("../img/slider2-image.png");
     background-repeat:no-repeat;
-    background-position:100% 10px;
+    background-position:640px 15px;
 }
 .slide:nth-child(3){
     background-image:url("../img/slider3-image.png");
     background-repeat:no-repeat;
-    background-position:100% 0;
+    background-position:541px 100%;
 }
 .slide{
     display:none;
@@ -256,7 +250,7 @@ h2 {
 }
 
 .btn-learn-more {
-    margin-top:50px;
+    margin-top:28px;
     padding: 9px 70px;
 }
 
@@ -323,7 +317,7 @@ h2 {
 }
 
 .services-title {
-    padding-top: 18px;
+    padding-top: 17px;
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
