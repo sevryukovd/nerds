@@ -7,9 +7,9 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: #283136;
-    font-weight: 500;
+
     min-width: 900;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Roboto medium", "Arial", sans-serif;
 }
 
 h2 {
@@ -486,15 +486,39 @@ hr {
 }
 
 .contacts {
+        float: left;
     min-height: 240px;
     width: 250px;
-    float: left;
     margin-top: 90px;
     margin-left: 160px;
-    text-align: center;
     background-color: #fff;
 }
+.contacts-title {
+    padding-left: 21px;
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
 
+.contacts span{
+    display: inline-block;
+    padding-left: 21px;
+    padding-top: 12px;
+    line-height: 20px;
+        color:#808080;
+}
+
+.telephone {
+    text-decoration: none;
+        color:#808080;
+
+}
+.btn-write {
+    padding: 10px 55px;
+    margin-top: 28px;
+    margin-left: 22px;
+}
 .map-logo {
     float: right;
     width: 150px;
