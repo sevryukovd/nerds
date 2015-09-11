@@ -235,7 +235,7 @@ h4 {
     height: 2px;
     background: #fb565a;
 }
-.basket-block {
+.basket {
     position: relative;
     float: right;
     margin-top: 54px;
@@ -244,7 +244,7 @@ h4 {
     text-transform: uppercase;
 }
 
-.basket-block .active a:after {
+.basket a:after {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -254,11 +254,10 @@ h4 {
     background: #fb565a;
 }
 
-.basket-block a{
+.basket a{
     text-decoration: none;
     color: #000;
 }
-
 
 .icon-basket:before {
     position: relative;
@@ -266,13 +265,12 @@ h4 {
     left: -9px;
     font-size: 16px;
     color: #bdbdbd;
-    
 }
 
-.basket-block :hover{
+.basket :hover{
     color: #f96a6e;
 }
-.basket-block :active{
+.basket :active{
     color:#ababab;
 }
 
