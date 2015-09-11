@@ -1,4 +1,4 @@
-*{
+* {
     outline: 1px solid black;
 }
 
@@ -162,7 +162,7 @@ h4 {
 .container {
     margin: 0 auto;
     padding: 0 10px;
-        width: 880px;
+    width: 880px;
 }
 
 .clearfix:after {
@@ -198,12 +198,11 @@ h4 {
 
 .main-navigation li {
     display: inline-block;
-        vertical-align: top;
+    vertical-align: top;
     font-size: 14px;
     line-height: 30px;
     margin-right: 44px;
     text-transform: uppercase;
-
 }
 
 .main-navigation li:last-child {
@@ -229,7 +228,7 @@ h4 {
 
 .main-navigation .active a:after {
     content: "";
-            position: absolute;
+    position: absolute;
     bottom: -7px;
     left: 0;
     width: 100%;
@@ -260,10 +259,17 @@ h4 {
 
 .icon-basket:before {
     position: relative;
-    top: -1px;
-    left: -10px;
+    top: 0px;
+    left: -9px;
     font-size: 16px;
     color: #bdbdbd;
+}
+
+.icon-basket:hover:before  {
+    color: #fb565a;
+}
+.icon-basket:active:before {
+    color: #8f8f8f;
 }
 
 .slider {
@@ -320,6 +326,9 @@ h4 {
     width: 500px;
     margin-top: 31px;
     color: #283136;
+}
+.slide-text h2{
+    width: 470px;
 }
 
 .slide-title {
@@ -480,15 +489,13 @@ hr {
 }
 
 .content-column-left {
-        float: left;
+    float: left;
     width: 580px;
-
 }
 
 .content-column-right {
-        float: right;
+    float: right;
     width: 240px;
-
 }
 
 .content-column-left h2 {
@@ -541,8 +548,8 @@ hr {
 }
 
 .content-column-right span:before {
-        content: "";
-        position: absolute;
+    content: "";
+    position: absolute;
     top: 7px;
     left: -80px;
     width: 65px;
@@ -551,8 +558,8 @@ hr {
 }
 
 .content-column-right span:after {
-        content: "";
-        position: absolute;
+    content: "";
+    position: absolute;
     top: 7px;
     left: 97px;
     width: 63px;
@@ -597,7 +604,6 @@ hr {
 .project-logo img {
     float: left
 }
-
 
 .project-logo-image1 {
     margin-left: 12px;
@@ -686,7 +692,7 @@ hr {
     float: left;
     margin-top: 1px;
     width: 242px;
-      text-align: center;
+    text-align: center;
 }
 
 .social-btn {
@@ -716,12 +722,13 @@ hr {
 }
 
 .icon-vk {
-        left: 14px;
+    left: 14px;
 }
 
 .icon-facebook {
     left: 15px;
 }
+
 .social-btn:hover {
     background-color: #fb565a;
 }
@@ -729,6 +736,7 @@ hr {
 .social-btn:active {
     background-color: #d6494d;
 }
+
 .social-discount {
     float: right;
     margin-right: 10px;
@@ -748,7 +756,7 @@ hr {
 }
 
 .workshop-gallery {
-        float: right;
+    float: right;
     width: 560px;
 }
 
