@@ -259,9 +259,6 @@ h4 {
     color: #000;
 }
 
-.basket-block a:active {
-    color: #8f8f8f;
-}
 
 .icon-basket:before {
     position: relative;
@@ -269,10 +266,14 @@ h4 {
     left: -9px;
     font-size: 16px;
     color: #bdbdbd;
+    
 }
 
 .basket-block :hover{
     color: #f96a6e;
+}
+.basket-block :active{
+    color:#ababab;
 }
 
 .slider {
