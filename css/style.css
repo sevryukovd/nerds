@@ -1,7 +1,6 @@
-*
-/*{
+*{
     outline: 1px solid black;
-}*/
+}
 
 */Подключение иконочного шрифта*/ @charset "UTF-8";
 @font-face {
@@ -672,13 +671,14 @@ hr {
 
 .footer-social {
     float: left;
-    min-width: 241px;
-    text-align: center;
+    margin-top: 1px;
+    width: 242px;
+      text-align: center;
 }
 
 .social-btn {
     position: relative;
-    margin-right: 27px;
+    margin-right: 24px;
     display: inline-block;
     vertical-align: top;
     width: 62px;
@@ -695,13 +695,20 @@ hr {
 .icon-vk,
 .icon-facebook,
 .icon-instagramm {
-    top: 20px;
-    left: 14px;
+    top: 19px;
+    left: 15px;
     position: absolute;
     font-size: 23px;
     text-transform: 16px;
 }
 
+.icon-vk {
+        left: 14px;
+}
+
+.icon-facebook {
+    left: 15px;
+}
 .social-btn:hover {
     background-color: #fb565a;
 }
