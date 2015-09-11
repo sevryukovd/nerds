@@ -672,13 +672,13 @@ hr {
 
 .footer-social {
     float: left;
-    min-width: 240px;
+    min-width: 241px;
     text-align: center;
 }
 
 .social-btn {
     position: relative;
-    margin-right: 24px;
+    margin-right: 27px;
     display: inline-block;
     vertical-align: top;
     width: 62px;
@@ -702,6 +702,13 @@ hr {
     text-transform: 16px;
 }
 
+.social-btn:hover {
+    background-color: #fb565a;
+}
+
+.social-btn:active {
+    background-color: #d6494d;
+}
 .social-discount {
     float: right;
     margin-right: 10px;
