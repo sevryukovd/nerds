@@ -598,6 +598,7 @@ hr {
     float: left
 }
 
+
 .project-logo-image1 {
     margin-left: 12px;
     margin-top: 67px;
@@ -611,6 +612,18 @@ hr {
 .project-logo-image3 {
     margin-left: 123px;
     margin-top: 45px;
+}
+
+.project-logo-image1:hover {
+    background: url("../img/glushanko-hover.png") no-repeat;
+}
+
+.project-logo-image2:hover {
+    background: url("../img/academy-hover.png") no-repeat;
+}
+
+.project-logo-image3:hover {
+    background: url("../img/borodinski-hover.png") no-repeat;
 }
 
 .map-container {
