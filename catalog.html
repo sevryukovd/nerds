@@ -26,26 +26,36 @@
                 </ul>
             </nav>
             <div class="basket">
-                <a href="#"><span class="icon-basket"></span>Корзина</a>
+                <a href="#"><i class="icon-basket"></i>Корзина</a>
             </div>
         </div>
+        <div class="container clearfix">
+                    <div class="welcome-title">
+                                    <h1>Добро пожаловать в магазин готовых макетов</h1>
+       </div>
+            </div>
     </header>
 
-<div class="welcome-title">
-                <div class="container clearfix">
-                    <h2>Добро пожаловать в магазин готовых макетов</h2>
-    </div>
-    </div>
+
     <div class="container main-container clearfix">
             <div class="filter">
-                <form action="/echo" method="post">
+                <form action="/echo" method="GET">
                     <div class="filter-title">Стоимость:</div>
-                    <input type="range" id="price-range" min="0" max="15000" step="1">
-                    <div class="min-max-price">от
-                        <div class="min-price">0</div>
-                        до
-                        <div class="max-price">15000</div>
-                    </div>
+                          <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 5%; width: 70%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        </div>
+      </div>
+                    
+                    
                     <div class="filter-title">Сетка:</div>
                     <input type="radio" id="id1" name="Grid" value="adapt" checked>
                     <label for="id1">Адаптивная:</label>
@@ -65,7 +75,7 @@
                     <input type="checkbox" id="id8" name="basket" value="no">
                     <label for="id8">Корзина</label>
                     <div class="show-button">
-                        <input type="submit" value="Показать">
+                        <input class="btn" type="submit" value="Показать">
                     </div>
                 </form>
             </div>
@@ -75,8 +85,8 @@
                     <a href="#">По цене</a>
                     <a href="#">По типу</a>
                     <a href="#">По функционалу</a>
-                    <a class="sort-btn-down" href="#">down</a>
-                    <a class="sort-btn-up" href="#">up</a>
+                    <a class="sort-btn-down" href="#"><i class="icon-down-dir"></i></a>
+                    <a class="sort-btn-up" href="#"><i class="icon-up-dir"></i></a>
                 </div>
                 <div class="project-photo">
                     <a href="#">
@@ -97,6 +107,7 @@
                     <a href="#">
                         <img src="img/dovetail.jpg" width="240" height="270" alt="">
                     </a>
+                    
                 </div>
             
             <div class="pagination">
