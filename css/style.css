@@ -886,22 +886,33 @@ hr {
     color: #cacaca;
     border-bottom: 1px dotted #00ca74;
 }
-
+.sort-panel a:hover {
+    border-bottom: 1px solid #00ca74;
+}
 .icon-down-dir:before {
     position: absolute;
     top: -4px;px;
     right: 6px;
     font-size: 23px;
     color: #00ca74;
-    
-    
 }
+
 .icon-up-dir:before {
     position: absolute;
     top: -4px;
     right: -11px;
     font-size: 23px;
-    color: ##c1c1c1;
+    color: #c1c1c1;
+}
+
+.icon-down-dir:hover:before,
+.icon-up-dir:hover:before{
+    color: #b5b5b5;
+}
+
+.icon-down-dir:active:before,
+.icon-up-dir:active:before{
+    color: #000;
 }
 
 .sort-panel a:last-child {
@@ -920,13 +931,13 @@ hr {
 }
 
 .project-photo img:hover {
-        padding-top: 30px;
+    padding-top: 30px;
     background-image: url(../img/dark-panel.png);
     background-position: top;
     background-repeat: no-repeat;
 }
 
-.project-photo a {
+.project-photo-item {
     display: inline-block;
     position: relative;
     margin-right: 77px;
@@ -935,12 +946,63 @@ hr {
     height: 270px;
 }
 
-.project-photo a:nth-child(2n) {
+.project-photo-item:nth-child(2n) {
     margin-right: 0;
 }
 
+.project-menu {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.menu-title {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 33px;
+    margin-left: 66px;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.project-menu p {
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.thai-title {
+    margin-left: 5px;
+}
+
+.project-btn {
+    padding: 10px 0px;
+    margin-top: 30px;
+    margin-left: 31px;
+    width: 140px;
+    font-size: 18px;
+}
+
+.project-btn:hover {
+    background-color: #d6494d;
+}
+
+.project-btn:active {
+    background-color: #b63538;
+}
+
 .pagination {
-    float: left;
+    float: r;
     margin-bottom: 79px;
     width: 285px;
 }
@@ -959,6 +1021,7 @@ hr {
     color: #000;
     background: #f1f1f1;
     border-radius: 3px;
+
 }
 
 .pagination a:first-child {
@@ -974,4 +1037,16 @@ hr {
     margin-right: 0;
     width: 140px;
     line-height: 38px;
+}
+
+.pagination a:nth-child(2):hover,
+.pagination a:nth-child(3):hover,
+.pagination a:nth-child(4):hover{
+    background-color: #e5e5e5;
+}
+
+.pagination a:nth-child(2):active,
+.pagination a:nth-child(3):active,
+.pagination a:nth-child(4):active{
+    box-shadow: inset 00px 3px 0 0 #b5b5b5;
 }
