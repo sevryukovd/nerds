@@ -696,7 +696,6 @@ hr {
 
 .footer-social {
     float: left;
-    margin-top: 1px;
     width: 242px;
     text-align: center;
 }
@@ -763,7 +762,6 @@ hr {
     text-align: center;
     text-transform: uppercase;
 }
-
 
 /*Стилизация фильтра*/
 
@@ -954,6 +952,7 @@ hr {
     position: absolute;
     top: 50px;
     left: 20px;
+    display: none;
     width: 200px;
     height: 200px;
     background-color: white;
@@ -963,7 +962,8 @@ hr {
     display: inline-block;
     vertical-align: top;
     margin-top: 33px;
-    margin-left: 66px;
+    margin-bottom: 13px;
+    margin-left: 61px;
     font-size: 18px;
     line-height: 22px;
     text-decoration: none;
@@ -973,9 +973,10 @@ hr {
 }
 
 .project-menu p {
-    margin-top: 12px;
-    margin-left: 20px;
+    margin-bottom: 28px;
+    margin-left: 18px;
     margin-right: 20px;
+    width: 170px;
     text-align: center;
     font-size: 14px;
     line-height: 18px;
@@ -983,14 +984,24 @@ hr {
 
 .thai-title {
     margin-left: 5px;
+    line-height: 24px;
+}
+
+.thai-description {
+    margin-top: -10px;
+    margin-bottom: 120px;
 }
 
 .project-btn {
     padding: 10px 0px;
-    margin-top: 30px;
-    margin-left: 31px;
+    margin-left: 30px;
     width: 140px;
     font-size: 18px;
+}
+
+.thai-btn {
+    position: absolute;
+    top: 132px;
 }
 
 .project-btn:hover {
@@ -1021,19 +1032,18 @@ hr {
     color: #000;
     background: #f1f1f1;
     border-radius: 3px;
-
 }
 
-.pagination a:first-child {
+.pagination .enabled {
     margin-right: 7px;
     width: 34px;
     height: 34px;
-    line-height: 35px;
+    line-height: 36px;
     background-color: #fff;
     border: 2px solid #f1f1f1;
 }
 
-.pagination a:last-child {
+.pagination .next {
     margin-right: 0;
     width: 140px;
     line-height: 38px;
