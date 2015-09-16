@@ -101,7 +101,7 @@
             </div>
             <div class="content-column-right">
                 <div class="nerds-logo-since">
-                    <img src="img/middle-logo.png" alt="Nerds">
+                    <img src="img/middle-logo.png" width="187" height="75" alt="Nerds">
                 </div>
                 <span>Since 2004</span>
                 <h4 class="content-column-title">Как мы работаем:</h4>
@@ -130,8 +130,27 @@
             </span>
             <a href="#" class="btn btn-write">Напишите нам</a>
         </div>
-        <img class="image-contact-marker" src="img/contact-marker.png" alt="contacts">
-        <img class="logo-contact-marker" src="img/map-logo.png" alt="Nerds">
+        <div class="image-contact-marker"></div>
+        <div class="logo-contact-marker"></div>
+        <div class="modal-content">
+      <div class="modal-content-close">закрыть</div>
+<form class="letter-form" action="/echo" method="post">
+
+    <label for="name-id" class="name-label">Ваше имя:</label>
+    
+<input type="text" id="name-id" class="name-field" name="name-latter" placeholder="Представьтесь, пожалуйста">
+
+    <label for="email-id" class="email-label">Ваш e-mail:</label>
+    
+    <input type="email" id="email-id" class="email-field" name="email-latter" placeholder="Для отправки ответа">
+    
+    <label for="text-id" class="text-label">Текст письма:</label>
+    <textarea id="text-id" name="latter-text" rows="5" cols="70"placeholder="В свободной форме"></textarea>
+    
+        <button type="submit" class="btn send-btn">Отправить</button>
+        <button class="btn cancel-btn">Отмена</button>
+        </form>
+    </div>
     </div>
 
     <footer class="main-footer">
@@ -148,6 +167,7 @@
 
         </div>
     </footer>
+     
     <!--
     <p>Разработка сайта: Дмитрий Севрюков</p>
     <p>Наставник: Кира Шатулова</p>
