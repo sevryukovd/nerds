@@ -167,7 +167,8 @@
         <div class="image-contact-marker"></div>
         <div class="logo-contact-marker"></div>
         <div class="modal-content">
-            <div class="modal-content-close">закрыть</div>
+            <div class="modal-content-close">закрыть
+            <div class="cross-image"></div></div>
             <form class="letter-form" action="/echo" method="post">
                 <label for="name-id" class="name-label">Ваше имя:</label>
                 <input type="text" id="name-id" class="name-field" name="name-latter" placeholder="Представьтесь, пожалуйста">
@@ -195,6 +196,27 @@
 
         </div>
     </footer>
+        <script>
+        var link = document.querySelector(".btn-write");
+      var popup = document.querySelector(".modal-content");
+            var close = document.querySelector(".modal-content-close");
+            var cancelClose = document.querySelector(".cancel-btn");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+      });
+            close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+ });
+            cancelClose.addEventListener("click", function(event) {
+                event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+            });
+    </script>
 
     <!--
     <p>Разработка сайта: Дмитрий Севрюков</p>
