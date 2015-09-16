@@ -891,6 +891,7 @@ hr {
     margin-left: 1px;
     line-height: 20px;
     cursor: pointer;
+    color: #41484c;;
 }
 
 .checkbox-item {
@@ -903,27 +904,37 @@ hr {
     margin-bottom: 17px;
     margin-left: 1px;
     cursor: pointer;
+    color: #41484c;
 }
 
 .filter input[type="checkbox"] {
     display: none;
 }
 
-.filter input[type="radio"] +label::before {
+.filter input[type="radio"] +label:before {
     content: "\25cb";
-    font-family: "symbols-nerds";
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+    font-family: "symbols-nerds";
     font-size: 28px;
     color: #c1c1c1;
 }
 
-.filter input[type="radio"]:checked +label::before {
+.filter input[type="radio"] + label:hover
+{
+    color: #000;
+}
+
+.filter input[type="radio"] + label:hover:before {
+    color: #b5b5b5;
+}
+
+.filter input[type="radio"]:checked +label:before {
     content: "\25cf";
 }
 
-.filter input[type="checkbox"] +label::before {
+.filter input[type="checkbox"] +label:before {
     content: "\2610";
     display: inline-block;
     vertical-align: middle;
@@ -933,7 +944,16 @@ hr {
     color: #c1c1c1;
 }
 
-.filter input[type="checkbox"]:checked +label::before {
+.filter input[type="checkbox"] + label:hover:before {
+    color: #b5b5b5;
+}
+
+.filter input[type="checkbox"] + label:hover
+{
+    color: #000;
+}
+
+.filter input[type="checkbox"]:checked +label:before {
     content: "\2611";
 }
 
