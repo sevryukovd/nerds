@@ -685,6 +685,7 @@ hr {
 .contacts p,
 .contacts span {
     display: inline-block;
+    vertical-align: baseline;
     margin-left: 21px;
     margin-bottom: 19px;
     width: 210px;
@@ -875,8 +876,9 @@ hr {
 }
 
 .price-controls label {
-    font-size: 16px;
     display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
     width: 50%;
 }
 
@@ -909,12 +911,12 @@ hr {
 
 .filter input[type="radio"] + label {
     display: inline-block;
+    vertical-align: baseline;
     margin-bottom: 18px;
     margin-left: 1px;
     line-height: 20px;
     cursor: pointer;
     color: #41484c;
-    ;
 }
 
 .checkbox-item {
@@ -924,6 +926,7 @@ hr {
 
 .filter input[type="checkbox"] + label {
     display: inline-block;
+    vertical-align: baseline;
     margin-bottom: 17px;
     margin-left: 1px;
     cursor: pointer;
@@ -1015,6 +1018,7 @@ hr {
 
 .sort-panel a {
     display: inline-block;
+    vertical-align: baseline;
     margin-right: 42px;
     text-decoration: none;
     color: #cacaca;
@@ -1081,6 +1085,7 @@ hr {
 
 .project-photo-item {
     display: inline-block;
+    vertical-align: baseline;
     position: relative;
     margin-right: 77px;
     margin-left: 0px;
