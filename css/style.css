@@ -1,17 +1,19 @@
 @charset "UTF-8";
-
 @font-face {
     font-family: 'symbols-nerds';
     src: url('../font/symbols-nerds.eot?27841936');
-    src: url('../font/symbols-nerds.eot?27841936#iefix') format('embedded-opentype'),
-        url('../font/symbols-nerds.woff?27841936') format('woff'),
-        url('../font/symbols-nerds.ttf?27841936') format('truetype'),
-        url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
+    src: url('../font/symbols-nerds.eot?27841936#iefix') format('embedded-opentype'), url('../font/symbols-nerds.woff?27841936') format('woff'), url('../font/symbols-nerds.ttf?27841936') format('truetype'), url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 @font-face {
@@ -21,48 +23,108 @@ src: url('../font/symbols-nerds.svg?27841936#symbols-nerds') format('svg');
 }
 */
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
     font-family: "symbols-nerds";
     font-style: normal;
     font-weight: normal;
     speak: none;
-
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
     margin-right: .2em;
     text-align: center;
     /* opacity: .8; */
-
     /* For safety - reset parent styles, that can break glyph codes*/
     font-variant: normal;
     text-transform: none;
-
     /* fix buttons height, for twitter bootstrap */
     line-height: 1em;
-
     /* Animation center compensation - margins should be symmetric */
     /* remove if not needed */
     margin-left: .2em;
-
     /* you can be more comfortable with increased icons size */
     /* font-size: 120%; */
-
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-basket:before { content: '\62'; } /* 'b' */
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-vk:before { content: '\76'; } /* 'v' */
-.icon-up-dir:before { content: '\25b2'; } /* '▲' */
-.icon-down-dir:before { content: '\25bc'; } /* '▼' */
-.icon-circle:before { content: '\25cb'; } /* '○' */
-.icon-circle-dot:before { content: '\25cf'; } /* '●' */
-.icon-check-off:before { content: '\2610'; } /* '☐' */
-.icon-check-on:before { content: '\2611'; } /* '☑' */
-.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+.icon-basket:before {
+    content: '\62';
+}
+
+
+/* 'b' */
+
+.icon-facebook:before {
+    content: '\66';
+}
+
+
+/* 'f' */
+
+.icon-twitter:before {
+    content: '\74';
+}
+
+
+/* 't' */
+
+.icon-vk:before {
+    content: '\76';
+}
+
+
+/* 'v' */
+
+.icon-up-dir:before {
+    content: '\25b2';
+}
+
+
+/* '▲' */
+
+.icon-down-dir:before {
+    content: '\25bc';
+}
+
+
+/* '▼' */
+
+.icon-circle:before {
+    content: '\25cb';
+}
+
+
+/* '○' */
+
+.icon-circle-dot:before {
+    content: '\25cf';
+}
+
+
+/* '●' */
+
+.icon-check-off:before {
+    content: '\2610';
+}
+
+
+/* '☐' */
+
+.icon-check-on:before {
+    content: '\2611';
+}
+
+
+/* '☑' */
+
+.icon-instagramm:before {
+    content: '📷';
+}
+
+
+/* '\1f4f7' */
 
 
 /*Основная стилизация*/
@@ -125,7 +187,7 @@ h4 {
     float: left;
     margin-left: 183px;
     margin-top: 54px;
-    width: 395px;
+    width: 400px;
 }
 
 .main-navigation ul {
@@ -137,11 +199,17 @@ h4 {
 
 .main-navigation li {
     display: inline-block;
+    float: left;
     vertical-align: top;
+    width: 65px;
     font-size: 14px;
     line-height: 30px;
-    margin-right: 44px;
+    margin-right: 46px;
     text-transform: uppercase;
+}
+
+.main-navigation li:first-child {
+    width: 54px;
 }
 
 .main-navigation li:last-child {
@@ -204,6 +272,15 @@ h4 {
     top: 5px;
     left: -31px;
     font-size: 16px;
+    color: #bdbdbd;
+}
+
+.icon-basket:hover:before {
+    color: #f96a6e;
+}
+
+.icon-basket:active:before {
+    color: #d7d7d7;
 }
 
 .basket a:hover {
@@ -581,27 +658,36 @@ hr {
     background-image: url("../img/map.jpg");
 }
 
+.google-map {
+    z-index: 1;
+}
+
 .contacts {
+    position: absolute;
     float: left;
     min-height: 240px;
     width: 250px;
-    margin-top: 90px;
+    margin-top: -333px;
     margin-left: 160px;
     background-color: #fff;
+    z-index: 2;
 }
 
 .contacts-title {
-    padding-left: 21px;
-    padding-top: 24px;
+    margin-left: 21px;
+    margin-top: 24px;
+    margin-bottom: 11px;
     font-size: 16px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
+.contacts p,
 .contacts span {
     display: inline-block;
-    padding-left: 21px;
-    padding-top: 12px;
+    margin-left: 21px;
+    margin-bottom: 19px;
+    width: 210px;
     line-height: 20px;
     color: #808080;
 }
@@ -613,7 +699,7 @@ hr {
 
 .btn-write {
     padding: 10px 55px;
-    margin-top: 28px;
+    margin-top: 10px;
     margin-left: 22px;
 }
 
@@ -621,6 +707,7 @@ hr {
     position: absolute;
     top: 113px;
     right: 171px;
+    display: none;
     width: 190px;
     height: 231px;
     background-image: url(../img/contact-marker.png);
@@ -631,6 +718,7 @@ hr {
     position: absolute;
     top: 168px;
     right: 234px;
+    display: none;
     width: 92px;
     height: 37px;
     background-image: url(../img/map-logo.png);
@@ -825,7 +913,8 @@ hr {
     margin-left: 1px;
     line-height: 20px;
     cursor: pointer;
-    color: #41484c;;
+    color: #41484c;
+    ;
 }
 
 .checkbox-item {
@@ -855,8 +944,7 @@ hr {
     color: #c1c1c1;
 }
 
-.filter input[type="radio"] + label:hover
-{
+.filter input[type="radio"] + label:hover {
     color: #000;
 }
 
@@ -882,8 +970,7 @@ hr {
     color: #b5b5b5;
 }
 
-.filter input[type="checkbox"] + label:hover
-{
+.filter input[type="checkbox"] + label:hover {
     color: #000;
 }
 
@@ -984,7 +1071,7 @@ hr {
     background-repeat: no-repeat;
 }
 
-.project-photo img:hover {
+.project-photo-item .img-item2 {
     padding-top: 30px;
     background-image: url(../img/dark-panel.png);
     background-position: top;
@@ -1008,10 +1095,14 @@ hr {
     position: absolute;
     top: 50px;
     left: 20px;
-    display: block;
+    display: none;
     width: 200px;
     height: 200px;
     background-color: white;
+}
+
+.project-item2 {
+    display: block
 }
 
 .menu-title {
@@ -1133,7 +1224,7 @@ hr {
     padding-bottom: 50px;
     background-color: white;
     box-shadow: 0px 20px 55px 0px rgba(0, 0, 0, .7);
-    ;
+    z-index: 3;
 }
 
 .modal-content-close {
@@ -1244,7 +1335,6 @@ input::-webkit-input-placeholder {
     color: #000;
     background-color: #f1f1f1;
 }
-
 
 .modal-content-show {
     display: block;
