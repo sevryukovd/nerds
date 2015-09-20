@@ -454,7 +454,9 @@ h4 {
 }
 
 .services-company {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #eee;
+    
 }
 
 .services-company-item {
@@ -483,16 +485,10 @@ h4 {
     letter-spacing: -0.028em;
 }
 
-hr {
-    margin-bottom: 41px;
-    border: none;
-    color: #eee;
-    background-color: #eee;
-    height: 2px;
-}
-
 .about-company {
-    margin: 0px auto;
+    margin-top: 41px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-column-left {
@@ -639,15 +635,19 @@ hr {
 
 .map-container {
     position: relative;
-    width: 1200px;
+    width: 1200;
     height: 416px;
     margin: 0 auto;
     margin-bottom: 77px;
     background-image: url("../img/map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .google-map {
-    z-index: 1;
+    position: relative;
+    z-index: 2;
 }
 
 .contacts {
@@ -695,22 +695,24 @@ hr {
     position: absolute;
     top: 113px;
     right: 171px;
-    display: none;
+    display: block;
     width: 190px;
     height: 231px;
     background-image: url(../img/contact-marker.png);
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .logo-contact-marker {
     position: absolute;
     top: 168px;
     right: 234px;
-    display: none;
+    display: block;
     width: 92px;
     height: 37px;
     background-image: url(../img/map-logo.png);
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .footer-social {
